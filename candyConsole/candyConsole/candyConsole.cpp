@@ -47,6 +47,54 @@ void CandyConsole::setPosition(int x, int y)
 	SetConsoleCursorPosition(hout, coord);
 }
 
+void CandyConsole::println(std::string str)
+{
+	std::cout << str << std::endl;
+}
+
+void CandyConsole::println(int number)
+{
+	std::cout << number << std::endl;
+}
+
+void CandyConsole::println(double number)
+{
+	std::cout << number << std::endl;
+}
+
+void CandyConsole::println(char str)
+{
+	std::cout << str << std::endl;
+}
+
+void CandyConsole::println(std::string str, int color)
+{
+	setTextColor(color);
+	std::cout << str << std::endl;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::println(int number, int color)
+{
+	setTextColor(color);
+	std::cout << number << std::endl;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::println(double number, int color)
+{
+	setTextColor(color);
+	std::cout << number << std::endl;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::println(char str, int color)
+{
+	setTextColor(color);
+	std::cout << str << std::endl;
+	setTextColor(WHITE);
+}
+
 void CandyConsole::println(int x, int y, std::string str)
 {
 	setPosition(x, y);
@@ -100,6 +148,54 @@ void CandyConsole::println(int x, int y, char str, int color)
 	setPosition(x, y);
 	setTextColor(color);
 	std::cout << str << std::endl;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::print(std::string str)
+{
+	std::cout << str;
+}
+
+void CandyConsole::print(int number)
+{
+	std::cout << number;
+}
+
+void CandyConsole::print(double number)
+{
+	std::cout << number;
+}
+
+void CandyConsole::print(char str)
+{
+	std::cout << str;
+}
+
+void CandyConsole::print(std::string str, int color)
+{
+	setTextColor(color);
+	std::cout << str;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::print(int number, int color)
+{
+	setTextColor(color);
+	std::cout << number;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::print(double number, int color)
+{
+	setTextColor(color);
+	std::cout << number;
+	setTextColor(WHITE);
+}
+
+void CandyConsole::print(char str, int color)
+{
+	setTextColor(color);
+	std::cout << str;
 	setTextColor(WHITE);
 }
 
